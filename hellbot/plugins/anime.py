@@ -147,7 +147,7 @@ async def _(event):
     if len(result) == 1:
         return await eod(hell, result[0])
     pic, msg = result
-    await event.client.send_file(event.chat_id, pic, caption=msg)
+    await event.client.send_file(event.chat_id, pic, caption=msg, force_document=False, parse_mode="HTML")
 
 
 @hell_cmd(pattern="aniquote$")
