@@ -1,6 +1,8 @@
 import json
 import re
 import requests
+import time
+
 from bs4 import BeautifulSoup
 from .pasters import telegraph_paste
 
